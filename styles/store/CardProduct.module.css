@@ -1,0 +1,26 @@
+.card{
+  border-radius: 5px;
+  color: var(--text-primary-color);
+  text-align: center;
+}
+
+.cardHead {
+  min-height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+
+.title {
+  padding-top: 0.5em;
+  text-transform: capitalize;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border-radius: 0;
+  width: 100%;
+  border: none;
+  padding: 0.25em 0;
+  color: var(--text-primary-color);
+}

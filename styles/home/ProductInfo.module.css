@@ -1,0 +1,28 @@
+.productInfo {
+  background-color: var(--text-primary-color);
+  color: var(--text-secondary-color);
+  min-height: 500px;
+  display: flex;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+.item:first-child {
+  flex-direction: column;
+  padding: 0 5em;
+}
+
+.item:last-child {
+  background-color: var(--primary-color);
+}
+
+.productInfoIcon {
+  font-size: 7em;
+  color: var(--text-primary-color);
+}

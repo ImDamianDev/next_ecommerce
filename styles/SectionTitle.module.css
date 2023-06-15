@@ -1,0 +1,19 @@
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.title {
+  text-align: center;
+  padding: 0.3em 0;
+  color: var(--text-primary-color);
+}
+
+.hr {
+  border: none;
+  background-color: var(--text-primary-color);
+  height: 3px;
+  margin: 0 auto;
+  width: 25vw;
+}

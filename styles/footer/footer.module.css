@@ -1,0 +1,27 @@
+.footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 3em 0;
+}
+
+.socialIcon {
+    color: var(--text-primary-color);
+    padding: 0 15px;
+    font-size: 2em;
+}
+
+.hr {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.copyR {
+    color: var(--text-primary-color);
+}
+
+
+@media (max-width: 767px) {
+    .copyR {
+        padding-inline: 2em;
+    }
+}
