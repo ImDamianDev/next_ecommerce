@@ -33,7 +33,7 @@ export default function Home({ products }) {
 }
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch("http://localhost:3000/api/products", {
+  const res = await fetch("https://next-ecommerce-ruddy-one.vercel.app/api/products", {
     cache: "no-store",
   });
   const data = await res.json();
