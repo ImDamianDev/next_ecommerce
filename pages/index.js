@@ -32,7 +32,7 @@ export default function Home({ products }) {
   );
 }
 
-export const getServerSideProps = async (context) => {
+export const getStaticProps = async (context) => {
   const res = await fetch("http://localhost:3000/api/products", {
     cache: "no-store",
   });
