@@ -1,6 +1,12 @@
-import styles from "@/styles/Store.module.css";
+// Importación de componentes
 import ProductList from "@/components/store/ProductList";
 import SectionTitle from "@/components/SectionTitle";
+
+// Importación de estilos
+import styles from "@/styles/Store.module.css";
+
+// Importación de función de obtención de datos
+import { fetchData } from "@/utils/fetchData";
 
 const StorePage = ({ products }) => {
   return (
@@ -12,14 +18,12 @@ const StorePage = ({ products }) => {
 };
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch("http://localhost:3000/api/products", {
-    cache: "no-store",
-  });
-  const data = await res.json();
+  // Obtener los productos utilizando la función fetchData
+  const products = await fetchData();
 
   return {
     props: {
-      products: data,
+      products,
     },
   };
 };
